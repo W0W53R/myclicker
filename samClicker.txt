@@ -4,7 +4,7 @@ Let's make a game!
 	desc:This is a simple idle game to showcase some of the basic functionalities of Idle Game Maker.<//>Make bunnies and shoot for the stars!
 	created:25/7/2017
 	updated:20/11/2017
-	version:2
+	version:3
 
 Settings
 	background:stuff/meadow.jpg
