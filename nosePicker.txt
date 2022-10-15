@@ -23,7 +23,7 @@ Buttons
         desc:Pick that nose to grant 1 snot
         on click:yield 1 snot
 
-Resources:
+ResourcesS
     *snot
         name:snot
         desc:Tasty
