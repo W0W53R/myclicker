@@ -44,3 +44,10 @@ Buildings
         cost:15 snot
         icon:icons[3,0]
         unlocked
+    *hand|hands
+        name:Hand|Hands
+        desc:A whole slew of fingers!
+        on tick:yield 5 snot
+        cost:65 snot
+        icon:icons[3,0]
+        req:65 snot:earned
