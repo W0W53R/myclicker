@@ -169,13 +169,7 @@ Buildings
 		limit:100
 		cost increase:105%
 
-	*food
-		name:food
-        desc:a pile of food!<//><b>Effect:</b><.>produces a lot of bunnies
-        icon:icons[0,1]
-        cost:1 goldenCarrot , 1 sugar , 1 salt
-        on tick:yield 10000 bunnies , -100 sugar , -100 salt
-        req:1 goldenCarrot , 1 sugar , 1 salt
+
 
   *super
        name:super
