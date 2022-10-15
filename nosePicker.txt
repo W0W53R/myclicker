@@ -18,10 +18,15 @@ Layout
 
 Buttons
     *pickNose
-        icon:stuff/bunny.png
         name:Pick your nose
         desc:Pick that nose to grant 1 snot
         on click:yield 1 snot
+        icon:stuff/bunny.png
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:bigBlue
 
 Resources
     *snot
