@@ -35,3 +35,12 @@ Resources
         icon:icons[0,0]
         class:noBackground
 		show earned
+
+Buildings
+    *finger|fingers
+        name:Finger|Fingers
+        desc:Automatic Nose Picker
+        on tick:yield 1 snot
+        cost:15 snot
+        icon:icons[3,0]
+        unlocked
