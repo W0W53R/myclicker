@@ -61,9 +61,9 @@ Buildings
         name:Finger Factories
         desc:A factory to produce fingers!
         on tick:
-            if(snot>=finger:cost)
+            if(snot>=50)
                 give 1 finger
-                take finger:cost snot
+                take 50 snot
         end
 
 Upgrades
