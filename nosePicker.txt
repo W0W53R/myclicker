@@ -63,7 +63,7 @@ Buildings
         on tick:
             if (snot>=50)
                 yield 1 finger
-                take 50 snot
+                lose 50 snot
             end
         end
 
