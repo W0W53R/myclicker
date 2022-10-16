@@ -62,7 +62,8 @@ Buildings
         desc:A factory to produce fingers!
         on tick:
         $snot=snot
-            if($snot>=50)
+        $fifty=50
+            if($snot>=$fifty)
                 give 1 finger
                 take 50 snot
         end
