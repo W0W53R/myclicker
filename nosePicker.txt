@@ -59,3 +59,10 @@ Upgrades
         passive:multiply yield of pickNose by 2
         cost:50 snot
         icon:icons[1,1]
+    *trainedFinger|trainedFingers
+        name:Trained Fingers
+        desc:Train your fingers to really dig for that snot.
+        passive:multiply yield of finger by 2
+        passive:multiply yield of hand by 2
+        cost:500 snot
+        icon:icons[1,1]
