@@ -61,7 +61,8 @@ Buildings
         name:Finger Factories
         desc:A factory to produce fingers!
         on tick:
-            if(snot>=50)
+        $snot=snot
+            if($snot>=50)
                 give 1 finger
                 take 50 snot
         end
