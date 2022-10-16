@@ -62,7 +62,7 @@ Buildings
         desc:A factory to produce fingers!
         on tick:
             if (snot>=50)
-                give 1 finger
+                yield 1 finger
                 take 50 snot
             end
         end
