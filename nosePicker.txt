@@ -57,6 +57,14 @@ Buildings
         cost:65 snot
         icon:icons[3,0]
         req:65 snot:earned
+    *fingerFactory
+        name:Finger Factories
+        desc:A factory to produce fingers!
+        on tick:
+            if(snot>=finger:cost)
+                give 1 finger
+                take finger:cost snot
+        end
 
 Upgrades
     *trainedCursor
