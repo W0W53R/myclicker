@@ -77,6 +77,6 @@ Upgrades
     *cheatyCheaty
         name:Cheating
         desc:Cheat for the sake of time
-        on tick:yield 9999999 snot
+        passive:multiply yield of finger by 10000
         icon:icons[0,0]
         req:1 snot:earned
