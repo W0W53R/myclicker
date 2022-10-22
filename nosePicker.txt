@@ -57,6 +57,14 @@ Buildings
         cost:65 snot
         icon:icons[3,0]
         req:65 snot:earned
+    *autoNosePicker|ANP
+        name:Automatic Nose Picker|Automatic Nose Pickers
+        desc:Mechanical arm to pick your nose for you!
+        on tick:yield 20 snot
+        cost:400 snot
+        icon:icons[3,0]
+        req:400 snot:earned
+    
 
 Upgrades
     *trainedCursor
