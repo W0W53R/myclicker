@@ -82,6 +82,13 @@ Upgrades
         cost:500 snot
         icon:icons[1,1]
         req:500 snot:earned
+    *digiNose
+        name:Digital Nose
+        desc:Digitize your nose so that your Automatic Nose Picker can pick it faster!
+        passive:multiply yield of autoNosePicker by 2
+        cost:2000 snot
+        icon:icons[1,1]
+        req:2000 snot:earned
     *cheatyCheaty
         name:Cheating
         desc:Cheat for the sake of time
