@@ -78,3 +78,5 @@ Upgrades
         name:Cheating
         desc:Cheat for the sake of time
         on tick:yield 9999999 snot
+        icon:icons[0,0]
+        req:1 snot:earned
