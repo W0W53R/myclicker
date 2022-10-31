@@ -64,6 +64,11 @@ Buildings
         cost:400 snot
         icon:icons[3,0]
         req:400 snot:earned
+    *snotMine|snotMines
+        name:Snot Mine
+        desc:Large nose
+        on tick:yield 40 snot
+        cost
     
 
 Upgrades
