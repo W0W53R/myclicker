@@ -56,19 +56,21 @@ Buildings
         on tick:yield 5 snot
         cost:65 snot
         icon:icons[3,0]
-        req:65 snot:earned
+        req:40 snot:earned
     *autoNosePicker|ANP
         name:Automatic Nose Picker|Automatic Nose Pickers
         desc:Mechanical arm to pick your nose for you!
         on tick:yield 20 snot
         cost:400 snot
         icon:icons[3,0]
-        req:400 snot:earned
+        req:350 snot:earned
     *snotMine|snotMines
         name:Snot Mine
         desc:Large nose
         on tick:yield 40 snot
-        cost
+        cost:750 snot
+        icon:icons[4,0]
+        req:600 snot:earned
     
 
 Upgrades
