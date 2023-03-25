@@ -71,7 +71,6 @@ Buildings
         cost:750 snot
         icon:icons[4,0]
         req:600 snot:earned
-    
 
 Upgrades
     *trainedCursor
