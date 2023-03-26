@@ -58,14 +58,14 @@ Buildings
         desc:A whole slew of fingers!
         on tick:yield 5 snot
         cost:65 snot
-        icon:icons[2,5] icons[2,3]
+        icon:icons[2,3] icons[2,5] 
         req:40 snot:earned
     *autoNosePicker|ANP
         name:Automatic Nose Picker|Automatic Nose Pickers
         desc:Mechanical arm to pick your nose for you!
         on tick:yield 20 snot
         cost:400 snot
-        icon:icons[2,5] icons[0,2]
+        icon:icons[0,2] icons[2,5] 
         req:350 snot:earned
     *snotMine|snotMines
         name:Snot Mine|Snot Mines
@@ -74,6 +74,13 @@ Buildings
         cost:750 snot
         icon:icons[3,1]
         req:600 snot:earned
+    *raffle
+        name:Raffle
+        desc:Gamble some of your hard earned snot for rewards!
+        on earn:yield random(500,5000) snot
+        cost:1000 snot
+        icon:icons[2,9] icons[3,7]
+        req:800 snot:earned
 
 Upgrades
     *trainedCursor
@@ -81,7 +88,7 @@ Upgrades
         desc:Train your cursor to pick harder.
         passive:multiply yield of pickNose by 2
         cost:50 snot
-        icon:icons[1,1] icons[2,2]
+        icon:icons[2,2] icons[1,1] 
         req:1 finger
     *trainedFinger|trainedFingers
         name:Trained Fingers
@@ -89,24 +96,24 @@ Upgrades
         passive:multiply yield of finger by 2
         passive:multiply yield of hand by 2
         cost:500 snot
-        icon:icons[2,5] icons[2,0]
+        icon:icons[2,0] icons[2,5] 
         req:250 snot:earned
     *criticalFinger|criticalFingers
         name:Critical Finger
         desc:Lets you occasionaly get 100x the snot from the nose
         cost:500 snot
-        icon:icons[2,5] icons[0,2] icons[2,3]
+        icon:icons[2,3] icons[0,2] icons[2,5]
         req:400 snot:earned
     *digiNose
         name:Digital Nose
         desc:Digitize your nose so that your Automatic Nose Picker can pick it faster!
         passive:multiply yield of autoNosePicker by 2
         cost:2000 snot
-        icon:icons[0,0] icons[0,2] icons[2,2]
+        icon:icons[2,2] icons[0,2] icons[0,0]
         req:2000 snot:earned
     *cheatyCheaty
         name:Cheating
         desc:Cheat for the sake of time
         passive:multiply yield of finger by 10000
-        icon:icons[2,5] icons[2,4]
+        icon:icons[2,4] icons[2,5] 
         req:1 snot:earned
