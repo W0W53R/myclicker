@@ -21,8 +21,11 @@ Buttons
         name:Pick your nose
         desc:Pick that nose to grant 1 snot
         on click:
-            yield 1 snot
-            if (have criticalFinger and chance(5%)) yield 9 snot
+            if (have criticalFinger and chance(5%)) 
+                yield 100 snot
+            else
+                yield 1 snot
+
         end
         icon:stuff/bunny.png
 		no text
@@ -35,7 +38,7 @@ Resources
     *snot
         name:Snot
         desc:The tastiest of all things!
-        icon:icons[0,0]
+        icon:icons[1,1]
         class:noBackground
 		show earned
     *goldenSnot
@@ -51,24 +54,24 @@ Buildings
         desc:Automatic Nose Picker
         on tick:yield 1 snot
         cost:15 snot
-        icon:icons[3,0]
+        icon:icons[2,5]
         unlocked
     *hand|hands
         name:Hand|Hands
         desc:A whole slew of fingers!
         on tick:yield 5 snot
         cost:65 snot
-        icon:icons[3,0]
+        icon:icons[2,5] icons[2,3]
         req:40 snot:earned
     *autoNosePicker|ANP
         name:Automatic Nose Picker|Automatic Nose Pickers
         desc:Mechanical arm to pick your nose for you!
         on tick:yield 20 snot
         cost:400 snot
-        icon:icons[3,0]
+        icon:icons[2,5] icons[0,2]
         req:350 snot:earned
     *snotMine|snotMines
-        name:Snot Mine
+        name:Snot Mine|Snot Mines
         desc:Large nose to mine snot from.
         on tick:yield 40 snot
         cost:750 snot
@@ -81,7 +84,7 @@ Upgrades
         desc:Train your cursor to pick harder.
         passive:multiply yield of pickNose by 2
         cost:50 snot
-        icon:icons[1,1]
+        icon:icons[1,1] icons[2,2]
         req:1 finger
     *trainedFinger|trainedFingers
         name:Trained Fingers
@@ -89,24 +92,24 @@ Upgrades
         passive:multiply yield of finger by 2
         passive:multiply yield of hand by 2
         cost:500 snot
-        icon:icons[1,1]
+        icon:icons[2,5] icons[2,0]
         req:250 snot:earned
     *criticalFinger|criticalFingers
         name:Critical Finger
-        desc:Lets you occasionaly get 10x the snot from the nose
+        desc:Lets you occasionaly get 100x the snot from the nose
         cost:500 snot
-        icon:icons[2,5]
+        icon:icons[2,5] icons[0,2] icons[2,3]
         req:400 snot:earned
     *digiNose
         name:Digital Nose
         desc:Digitize your nose so that your Automatic Nose Picker can pick it faster!
         passive:multiply yield of autoNosePicker by 2
         cost:2000 snot
-        icon:icons[1,1]
+        icon:icons[0,0] icons[0,2] icons[2,2]
         req:2000 snot:earned
     *cheatyCheaty
         name:Cheating
         desc:Cheat for the sake of time
         passive:multiply yield of finger by 10000
-        icon:icons[0,0]
+        icon:icons[2,5] icons[2,4]
         req:1 snot:earned
