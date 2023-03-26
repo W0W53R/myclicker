@@ -56,9 +56,8 @@ Buildings
     *hand|hands
         name:Hand|Hands
         desc:A whole slew of fingers!
-        on tick:yield 5 snot
+        on tick:yield 10 snot
         cost:65 snot
-        cost increase:100%
         cost:5 fingers
         icon:icons[2,3] icons[2,5] 
         req:40 snot:earned
