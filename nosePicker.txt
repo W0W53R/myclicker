@@ -77,7 +77,11 @@ Buildings
     *raffle
         name:Raffle
         desc:Gamble some of your hard earned snot for rewards!
-        on earn:yield random(500,5000) snot
+        on earn:
+            $earn is random(500,5000)
+            yield $earn snot
+            toast $earn snot gained
+        end
         cost:1000 snot
         icon:icons[2,9] icons[3,7]
         req:800 snot:earned
