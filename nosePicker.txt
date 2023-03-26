@@ -3,7 +3,7 @@ Let's make a game!
     by:Yours Truly
     desc:Pick that nose!
     created:14/10/2022
-    updated:14/10/2022
+    updated:3/25/2023
     version:0.1
 
 Settings
@@ -20,7 +20,10 @@ Buttons
     *pickNose
         name:Pick your nose
         desc:Pick that nose to grant 1 snot
-        on click:yield 1 snot
+        on click:
+            yield 1 snot
+            if (have criticalFinger and chance(5%)) yield 9 snot
+        end
         icon:stuff/bunny.png
 		no text
 		class:bigButton hasFlares
@@ -66,20 +69,20 @@ Buildings
         req:350 snot:earned
     *snotMine|snotMines
         name:Snot Mine
-        desc:Large nose
+        desc:Large nose to mine snot from.
         on tick:yield 40 snot
         cost:750 snot
-        icon:icons[4,0]
+        icon:icons[3,1]
         req:600 snot:earned
 
 Upgrades
     *trainedCursor
         name:Trained Cursor
-        desc:Train your cursor to pick faster.
+        desc:Train your cursor to pick harder.
         passive:multiply yield of pickNose by 2
         cost:50 snot
         icon:icons[1,1]
-        req:50 snot:earned
+        req:1 finger
     *trainedFinger|trainedFingers
         name:Trained Fingers
         desc:Train your fingers to really dig for that snot.
@@ -87,7 +90,13 @@ Upgrades
         passive:multiply yield of hand by 2
         cost:500 snot
         icon:icons[1,1]
-        req:500 snot:earned
+        req:250 snot:earned
+    *criticalFinger|criticalFingers
+        name:Critical Finger
+        desc:Lets you occasionaly get 10x the snot from the nose
+        cost:500 snot
+        icon:icons[2,5]
+        req:400 snot:earned
     *digiNose
         name:Digital Nose
         desc:Digitize your nose so that your Automatic Nose Picker can pick it faster!
