@@ -21,11 +21,8 @@ Buttons
         name:Pick your nose
         desc:Pick that nose to grant 1 snot
         on click:
-            if (have criticalFinger and chance(5%)) 
-                yield 100 snot
-            else
-                yield 1 snot
-            end
+            yield 1 snot
+            if (have criticalFinger and chance(5%)) yield 99 snot
         end
         icon:stuff/bunny.png
 		no text
