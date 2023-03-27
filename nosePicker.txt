@@ -81,7 +81,7 @@ Buildings
         on earn:
             $earn is random(500,5000)
             yield $earn snot
-            toast $earn snot gained
+            toast [$earn] snot gained
         end
         cost:1000 snot
         icon:icons[2,9] icons[3,7]
