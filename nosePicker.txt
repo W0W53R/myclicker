@@ -75,17 +75,6 @@ Buildings
         cost:750 snot
         icon:icons[3,1]
         req:600 snot:earned
-    *raffle
-        name:Raffle
-        desc:Gamble some of your hard earned snot for rewards!
-        on earn:
-            $earn is random(500,1500)
-            yield $earn snot
-            toast [$earn] snot gained
-        end
-        cost:1000 snot
-        icon:icons[2,9] icons[3,7]
-        req:800 snot:earned
 
 Upgrades
     *trainedCursor
