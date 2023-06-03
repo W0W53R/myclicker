@@ -57,7 +57,7 @@ Buildings
         name:Hand|Hands
         desc:A whole slew of fingers!
         on tick:yield 10 snot
-        cost:65 snot
+        cost:60 snot
         icon:icons[2,3] icons[2,5] 
         req:40 snot:earned
     *autoNosePicker|ANP
