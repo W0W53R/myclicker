@@ -38,49 +38,9 @@ Resources
 		shown
 		
 Shinies
-	*luckyBunny
-		on click:log Woop
-		movement:onRight moveLeft fade bounce:0.05
-		frequency:60
-		frequency variation:30
-		icon:stuff/luckyBunny.png
-		class:bigButton
-		on click:
-			$boost=1
-			if (have clover) $boost=4
-			if (chance(25%))
-				//get at least 7, or between 1 and 3 minutes of our bunny production
-				$amount=max(7,random(bunnies:ps*60*1,bunnies:ps*60*3))*$boost
-				toast The lucky bunny grants you<//><b>[$amount] bunnies</b>.
-				yield $amount bunnies
-			else
-				$amount=1*$boost
-				toast The lucky bunny grants you<//><b>[$amount] golden carrot[s?$amount]</b>!
-				yield $amount goldenCarrot
-			end
-		end
 
 Buildings
-	*cage|cages
-		name:Rabbit cage|Rabbit cages
-		desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
-		icon:icons[3,0]
-		cost:15 bunnies
-		on tick:yield 0.1 bunny
-		unlocked
 		
 Upgrades
-	*parsley
-		name:Parsley
-		desc:A nice little supplement to your bunnies' diet.<//><b>Effect:</b><.>+1 bunny/click
-		icon:icons[1,1]
-		cost:100 bunnies
-		passive:increase bunny yield of bunnyButton by 1
-		req:10 bunnies:earned
 		
 Achievements
-	*bunnyAchiev1
-		name:Run rabbit run
-		desc:Have <b>1</b> bunny.
-		req:1 bunny
-		icon:icons[2,4] icons[0,2] icons[0,6]
