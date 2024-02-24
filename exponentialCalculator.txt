@@ -11,7 +11,7 @@ Settings
 	building cost increase:115%
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
-	spritesheet:letters, 48 by 48, https://github.com/W0W53R/myclicker/blob/main/WXYZ.png
+	spritesheet:letters, 48 by 48, https://github.com/W0W53R/myclicker/blob/main/WXYZ.jpg
 	stylesheet:stuff/bigBlue.css
 
 Layout
